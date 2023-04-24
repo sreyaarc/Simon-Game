@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Simon Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
+    <style>
+        body {
+            background-color: #5F264A;
+            font-family: "Bruno Ace", cursive;
+            letter-spacing: 2px;
+            
+        }
+        .btn {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 6px solid black;
+            border-radius: 25px;
+            margin: 20px;
+            
+        }
+        .btn1 {
+            background-color: red;
+        }
+        .btn2 {
+            background-color: green;
+        }
+        .btn3 {
+            background-color: blue;
+        }
+        .btn4 {
+            background-color: yellow;
+        }
+        .container1, .container2 {
+            text-align: center;
+        }
+        .gameOver {
+            background-color: red;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            margin: 70px auto 50px;
+            color: white;
+            line-height: 2px;
+            letter-spacing: 3px;
+        }
+        .pressed{
+            box-shadow: 0 0 10px white;
+            background-color: grey;
+        }
+        @media (max-width : 680px) and (min-width: 531px){
+            h1 {
+              font-size: 1.5rem;
+            }
+            h2, h3 {
+                font-size: 1.1rem;
+            }
+        }
+        @media (max-width: 530px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+            h2, h3 {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To The Simon Game</h1>
+    <h2>Press A Key To Start</h2>
+    <h3></h3>
+    <div class="container1">
+        <div class="btn btn1" id="red"></div>
+        <div class="btn btn2" id="green"></div>
+    </div>
+    <div class="container2">
+        <div class="btn btn3" id="blue"></div>
+        <div class="btn btn4" id="yellow"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
